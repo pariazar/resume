@@ -1,0 +1,486 @@
+.yerslider-wrap {
+  /* no-js begin */
+  position: relative;
+  width: 100%;
+  /* no-js end */
+  /* default begin */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  /* default end */
+}
+
+.yerslider-wrap * {
+  /* default begin */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  /* default end */
+}
+
+.yerslider-wrap iframe {
+  position: relative;
+  z-index: 9999;
+}
+
+.yerslider-mask {
+  /* no-js begin */
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  /* no-js end */
+}
+
+.yerslider-slider {
+  /* no-js begin */
+  white-space: nowrap;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: 0;
+  /* no-js end */
+}
+
+.yerslider-slide {
+  /* no-js begin */
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  display: none;
+  /* no-js end */
+  /* default begin */
+  background-color: DodgerBlue;
+  /* default end */
+}
+
+.yerslider-slide.media {
+  /* default begin */
+  background: black;
+  /* default end */
+}
+
+.yerslider-prevnext {
+  /* default begin */
+  position: absolute;
+  cursor: pointer;
+  z-index: 99999;
+  /* default end */
+  /* theme begin */
+  width: 40px;
+  height: 80px;
+  top: 50%;
+  margin-top: -40px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  /* theme end */
+}
+
+.yerslider-prevnext {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.yerslider-has-bullets .yerslider-prevnext {
+  margin-top: -94px;
+}
+
+.yerslider-next {
+  /* theme begin */
+  right: 20px;
+  /* theme end */
+}
+
+.yerslider-next:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  border: 20px solid transparent;
+  border-left: 20px solid black;
+}
+
+.yerslider-next-inactive {
+  /* default begin */
+  display: none;
+  /* default end */
+}
+
+.yerslider-prev {
+  /* default begin */
+  left: 20px;
+  /* default end */
+}
+
+.yerslider-prev:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  border: 20px solid transparent;
+  border-right: 20px solid black;
+}
+
+.yerslider-prev-inactive {
+  /* default begin */
+  display: none;
+  /* default end */
+}
+
+.yerslider-next:after {
+  content: "";
+  top: 27px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 0 solid transparent;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.yerslider-prev:after {
+  content: "";
+  top: 27px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: 0 solid transparent;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.yerslider-bullets-wrap {
+  /* default begin */
+  text-align: center;
+  margin-top: 16px;
+  line-height: 0;
+  /* default end */
+}
+
+.yerslider-bullet {
+  /* default begin */
+  width: 12px;
+  height: 12px;
+  border: 1px solid DodgerBlue;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+  border-radius: 6px;
+  /* default end */
+}
+
+.yerslider-bullet-current {
+  /* default begin */
+  background-color: DodgerBlue;
+  /* default end */
+}
+
+.yerslider-video {
+  position: relative;
+  background: #000;
+  font-size: 0;
+  line-height: 0;
+}
+
+.yerslider-video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.yerslider-video-play {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -30px;
+}
+
+.yerslider-video-play {
+  height: 80px;
+  -webkit-transform: scale(1, 0.6);
+  -moz-transform: scale(1, 0.6);
+  -o-transform: scale(1, 0.6);
+  -ms-transform: scale(1, 0.6);
+  transform: scale(1, 0.6);
+}
+
+.yerslider-video-play:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  border: 20px solid transparent;
+  border-left: 20px solid white;
+  width: 0;
+  height: 0;
+}
+
+.csstransforms3d .yerslider-video-play:after {
+  top: 18px;
+}
+
+.yerslider-video-preview {
+  width: 100%;
+  height: auto;
+}
+
+.yerslider-video-play:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.yerslider-thumbs-wrap {
+  margin-top: 10px;
+}
+
+.yerslider-thumbs-mask {
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.yerslider-thumbs-items {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  margin-left: -5px;
+}
+
+.yerslider-thumbs-item {
+  display: inline-block;
+  min-width: 0;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 20px 40px;
+  background-color: dodgerblue;
+}
+.yerslider-thumbs-item * {
+  cursor: pointer;
+}
+.yerslider-thumbs-item p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.thumb-slidegroup-current {
+  background-color: #004384;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+  margin: 0 auto 50px auto;
+}
+
+@media (min-width: 449px) {
+  body {
+    margin: 0 30px 100px 30px;
+  }
+}
+/* 4 spaces per tab */
+pre {
+  tab-size: 4;
+}
+
+.page-typo {
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .page-typo {
+    margin: 0;
+    text-align: left;
+  }
+}
+.page-typo h1 {
+  font-weight: 200;
+  font-size: 60px;
+  margin: 20px 0;
+  color: #525252;
+}
+
+@media (min-width: 450px) {
+  .page-typo h1 {
+    font-size: 80px;
+  }
+}
+.page-typo h2 {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 50px 0 20px 0;
+  padding-top: 20px;
+  color: #525252;
+  border-top: 1px dashed #bbb;
+}
+
+.page-typo h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0;
+  color: #525252;
+}
+
+.page-typo p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #525252;
+}
+
+.page-typo li {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #525252;
+  margin-bottom: 3px;
+}
+
+.page-typo a {
+  color: DodgerBlue;
+}
+
+.tableofcontents ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.tableofcontents li {
+  list-style-type: none;
+}
+
+.tableofcontents a {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: DodgerBlue;
+}
+
+code {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.4;
+  display: block;
+  background: #F1EEEB;
+  padding: 5px 30px 10px 30px;
+  margin: 20px 0;
+  color: #525252;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.code-inline {
+  display: inline;
+  padding: 2px 5px 2px 5px;
+}
+
+.code-html {
+  padding-top: 24px;
+}
+
+.code-html:before {
+  content: "HTML";
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: #bbb;
+  padding: 0 10px 0 10px;
+}
+
+@media (min-width: 450px) {
+  code {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.code-focus {
+  display: inline;
+  color: DodgerBlue;
+  font-weight: bold;
+}
+
+.alert {
+  color: red;
+}
+
+.demo-typo p {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.download_btn {
+  display: inline-block;
+  padding: 8px 30px 12px 30px;
+  background-color: DodgerBlue;
+  color: white !important;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.download_btn .version {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+.changelog {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #525252;
+}
+
+.changelog .date {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #525252;
+}
