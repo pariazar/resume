@@ -50,7 +50,7 @@ html {
   margin-top: 20px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: url("../image/resume_image.png");
+  background-image: url("resume_image.png");
   background-size: cover;
   border: 10px #8707ff solid;
 }
